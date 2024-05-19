@@ -1,0 +1,8 @@
+Stake: 20.0
+Bet on: 3 red
+Answers: 1 black
+
+Stake: 20.0
+Bet on: 2 black
+Answers: 1 black
+
