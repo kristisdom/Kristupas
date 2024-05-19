@@ -18,7 +18,10 @@ class test_game(unittest.TestCase):
         y = self.game.answers.color_assign(self.z_guess)
         self.assertEqual(y, self.z)
     
-        
+    def test_rev_color_assign(self):
+        y = self.game.answers.color_assign(self.z_guess)
+        c = self.game.answers2.color_assign(y)
+        self.assertEqual(c, self.z)    
         
 
 if __name__ == '__main__':
