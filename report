@@ -1,0 +1,57 @@
+Kristupas Dominas EKF-23
+Course work: Betting game
+
+Introduction
+The presented application is a gambling game in which the player has to guess a number and a color. 
+The user can bet a desired amount of coins on their guess, while the reward coefficient
+will depend on whether both the color and the number were guessed correctly or only one of them, or neither.
+It is worth noting that guessing only the correct number gives a better coin multiplier, as there are 10 numbers
+to choose from and only 3 colors: red, white and black. The game is played by giving inputs when the program prompts to make a guess or a bet etc.
+This game was programmed using Python programming language. 
+
+Analysis
+This program is divided into separate files that each contain a unique class that is responsible for handling different parts of the game. 
+These classes are the following: 
+
+Answer class: responsible for generating answers, assigning integer variables for string inputs and revealing the answers.
+Error class: an error handling class which ensures that the user does not make an invalid input.
+Multiplication class: assigns a coin multiplier with respect to the quality of the answer,
+Text class: imports starting balance variable from a text file and exports a complete log of made bets through out the game
+Game class: is the core class that contains a method that is responsible for carrying out the program (calling all the necessary functions)
+
+This program also implements all 4 object-oriented programming pillars:
+
+1. Polymorphism: by defition, polymporphism allows objects of different types to be treated as if they were of the same type. 
+Such an example can be perfectly seen in this code. In the Game class, objects of Errors1 and Errors2 classses are instantiated, both share
+methods of the same name, although their functions differ. The Game class treats them as instances of the Errors class,  thus demonstrating polymorphism.
+
+2. Abstraction: Said 'Errors1' & '2' classes are in fact subclasses of a parent abstract class called 'Errors' that contains 2 abstract methods 
+which are inherited by the mentioned subclasses. The 'Errors' class ensures that any other error handling class
+
+3: Inheritance: In addition to the 'Errors' class hierarchy and it's inherited methods, Answers class also has it's own 
+subclass that inherits some of it's methods.
+
+4: Encapsulation: Each class encapsulates its own data and methods, exposing only what is necessary through public methods. 'Game', 
+'Answers' and 'Text' classes possess private methods that make it more difficult to access them. 
+
+Furthermore, 2 design patterns were used in this code:
+
+Decorator: the decorator was implemented in the function responsible for giving the introduction of the game. Its purpose is to 
+make it easier to edit the rules of the game if they would ever change.
+
+Singleton: this design pattern was used in the 'Answers' and 'Text' classes to ensure that only one instance of each class
+could be created as there are multiple occasions in the code where more than one object is generated
+for both of these classes that serve no unique purpose and are only constructed for accessibility
+
+Results
+- The program resulted in a simple, however quite entertaining betting game.
+- It was difficult to think of how to implement all of the requirements, therefore some of the functions
+feel a little forced.
+- Unit testing was a very aggrevating experience as the concept was relatively new. Such a method begs to differ wether 
+it is the most convenient way to test one's program.
+
+Conclusions
+To conclude, althought the base task that I chose to complete was not as challenging, applying object-orientated programming principles
+taught me to write code in a more professional manner. The game that I constructed is quite primitive and is still at a very early development stage.
+It grasps the basic concept of gambling, but it could use more gamemodes. In addition, it would be intriguing to give it more life by making any kind of 
+visuals or adding music soundtracks, contributing to the atmosphere of a real casino.
