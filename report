@@ -22,7 +22,7 @@ Game class: is the core class that contains a method that is responsible for car
 This program also implements all 4 object-oriented programming pillars:
 
 1. Polymorphism: by defition, polymporphism allows objects of different types to be treated as if they were of the same type. 
-Such an example can be perfectly seen in this code. In the Game class, objects of Errors1 and Errors2 classses are instantiated, both share
+Such an example can be perfectly seen in this code. In the Game class, objects of 'Errors1' and 'Errors2' classses are instantiated, both share
 methods of the same name, although their functions differ. The Game class treats them as instances of the Errors class,  thus demonstrating polymorphism.
 
 2. Abstraction: Said 'Errors1' & '2' classes are in fact subclasses of a parent abstract class called 'Errors' that contains 2 abstract methods 
